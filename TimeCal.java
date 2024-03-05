@@ -11,25 +11,23 @@ public class TimeCal {
       java.util.Date date= new Date();
       Calendar cal = Calendar.getInstance();
       cal.setTime(date);
-      
-      boolean autoCurrDate = true;
-      
+            
       //all start date variables
-      long startDateYear = 2023;
-      long startDateMonth = 8;
-      long startDateDay = 31;
-      long startDateHour = 7;
-      long startDateMinute = 34;
+      long startDateYear = 0;
+      long startDateMonth = 0;
+      long startDateDay = 0;
+      long startDateHour = 0;
+      long startDateMinute = 0;
       long startDateSecond = 0;
       
       long totalStartSeconds = 0;
       
       //all end date variables
-      long endDateYear = 2024;
-      long endDateMonth = 6;
-      long endDateDay = 13;
-      long endDateHour = 14;
-      long endDateMinute = 21;
+      long endDateYear = 0;
+      long endDateMonth = 0;
+      long endDateDay = 0;
+      long endDateHour = 0;
+      long endDateMinute = 0;
       long endDateSecond = 0;
       
       long totalEndSeconds = 0;
@@ -44,16 +42,7 @@ public class TimeCal {
         long currDateSecond = 0;
         
         
-      if(autoCurrDate = false){
-        currDateYear = 2023;
-        currDateMonth = 10;
-        currDateDay = 15;
-        currDateHour = 18;
-        currDateMinute = 58;
-        currDateSecond = 0;
-      }
-      
-      if(autoCurrDate = true){
+      if(true){
         currDateYear = cal.get(Calendar.YEAR);
         currDateMonth = (cal.get(Calendar.MONTH) + 1);
         currDateDay = cal.get(Calendar.DATE);
